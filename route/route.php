@@ -14,12 +14,4 @@ Route::get('think', function () {
 });
 
 Route::get('hello/:name', 'index/hello');
-Route::get('live/index', 'live/index');
-// Route::rule('index/hello/:name','index/Index/hello','get');
 
-// Route::rule('live/','live/Live/index','get');
-return [
-	// Route::rule('index/hello/:name','index/Index/hello','get'),
-
-	// Route::rule('live/','live/Live/index','get')
-];
