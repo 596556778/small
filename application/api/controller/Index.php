@@ -1,10 +1,10 @@
 <?php
 namespace app\api\controller;
 
-class Index
+class Index extends Common
 {
 	public function index(){
 
-		echo "hello word!";
+		echo 'good!'
 	}
 }
