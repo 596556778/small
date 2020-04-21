@@ -1,8 +1,8 @@
 <?php
 namespace app\api\controller;
 use think\facade\Request;
-
-class Common{
+use think\controller;
+class Common extends Controller{
 	
 	protected $user;
 	protected $token;
@@ -35,7 +35,7 @@ class Common{
 		];
 	}
 
-	public function showJson($data = null,$msg = 'ok', $code = '200', $status = 1){
+	protected function showJson($data = '',$msg = 'ok', $code = '200', $status = 1){
 		$result = [
 			'msg' => $msg,
 			'code' => $code,
