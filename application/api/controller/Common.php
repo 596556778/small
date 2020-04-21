@@ -2,6 +2,7 @@
 namespace app\api\controller;
 use think\facade\Request;
 use think\Controller;
+use think\facade\Log;
 class Common extends Controller{
 	
 	protected $user;
@@ -42,6 +43,7 @@ class Common extends Controller{
 			'status' => ($status)?'success':'failure',
 			'data' => $data
 		];
+		Log::record(json_encode($result));
 		return json($result);
 	}
 
