@@ -1,7 +1,7 @@
 <?php
 namespace app\api\controller;
 use think\facade\Request;
-use think\controller;
+use think\Controller;
 class Common extends Controller{
 	
 	protected $user;
