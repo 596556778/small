@@ -11,7 +11,6 @@ class Index extends Common
 
 	public function login(){
 		$params = (new UserValidate())->toCheck('login');
-
 		$config = [
 			'app_id' => \Env::get('APP_ID'),
 			'secret' => \Env::get('APP_SERCTER')

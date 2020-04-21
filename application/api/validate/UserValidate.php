@@ -12,7 +12,7 @@ class UserValidate extends BaseValidate
 
 	];
 
-	protected $sence = [
+	protected $scene = [
 		'login' => ['mini_code']
 	];
 }

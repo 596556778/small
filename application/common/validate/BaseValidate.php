@@ -1,14 +1,16 @@
 <?php
 namespace app\common\validate;
 use think\Validate;
+use think\facade\Request;
 use app\common\exception\BaseException;
 
 class BaseValidate extends Validate{
 	public function toCheck($scene = '', $params = []){
 		$fields = [];
 		if(empty($params)){
-			$params = input('param.');
+			$params = Request::param();
 		}
+
 		if(!empty($scene)){
 			$this->scene($scene);
 			if(!empty($this->scene[$scene])){
