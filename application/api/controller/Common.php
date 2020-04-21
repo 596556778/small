@@ -35,13 +35,14 @@ class Common{
 		];
 	}
 
-	protected function response($data = [],$msg = 'ok', $code = '200', $status = 1){
-		return [
+	protected function showJson($data = [],$msg = 'ok', $code = '200', $status = 1){
+		$result = [
 			'msg' => $msg,
 			'code' => $code,
 			'status' => ($status)?'success':'failure',
 			'data' => $data
 		];
+		return json($result);
 	}
 
 }
