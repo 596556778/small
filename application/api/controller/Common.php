@@ -36,7 +36,7 @@ class Common extends Controller{
 		];
 	}
 
-	protected function showJson($data = '',$msg = 'ok', $code = '200', $status = 1){
+	protected function showJson($data = [],$msg = 'ok', $code = '200', $status = 1){
 		$result = [
 			'msg' => $msg,
 			'code' => $code,
