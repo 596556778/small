@@ -35,7 +35,7 @@ class Common{
 		];
 	}
 
-	protected function showJson($data = [],$msg = 'ok', $code = '200', $status = 1){
+	public function showJson($data = null,$msg = 'ok', $code = '200', $status = 1){
 		$result = [
 			'msg' => $msg,
 			'code' => $code,
