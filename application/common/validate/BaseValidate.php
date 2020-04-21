@@ -13,9 +13,9 @@ class BaseValidate extends Validate{
 		if(!empty($scene)){
 			$this->scene($scene);
 			if(!empty($this->scene[$scene])){
-				foreach ($this->scene[$scene] as $value) {
+				foreach ($this->scene[$scene] as $key => $value) {
 					if(array_key_exists($value, $params)){
-						$fields[$value] = $params[$value];
+						$fields[$key] = $params[$value];
 					}
 				}
 			}
