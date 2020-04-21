@@ -17,7 +17,6 @@ class Index extends Common
 		];
 		$wechat = Factory::miniProgram($config);//实例化
 		$session_data = $wechat->auth->session($params['mini_code']);
-		$this->showJson($session_data);
-		// return json($session_data);
+		return $this->showJson($session_data);
 	}
 }
