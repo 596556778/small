@@ -43,7 +43,7 @@ class Common extends Controller{
 			'status' => ($status)?'success':'failure',
 			'data' => $data
 		];
-		Log::record(json_encode($result,'error'));
+		Log::record(json_encode($result),'error');
 		return json($result);
 	}
 
