@@ -44,8 +44,8 @@ class Common extends Controller{
 			'data' => $data
 		];
 		Log::record(json_encode($result),'error');
-		var_dump(json($result));die;
-		return json($result);
+		
+		return json($data);
 	}
 
 }
