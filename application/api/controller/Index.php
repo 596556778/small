@@ -6,7 +6,7 @@ class Index extends Common
 {
 	public function index(){
 
-		echo 'good!';
+		echo 'good luck!';
 	}
 
 	public function login(){
