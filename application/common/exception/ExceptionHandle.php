@@ -19,7 +19,7 @@ class ExceptionHandle extends Handle{
 		}elseif($e instanceof HttpException && request()->isAjax()){
 			return response($e->getMessage(), $e->getStatusCode());
 		}elseif($e instanceof BaseException){
-			Log::record($e->msg,'error');
+			
 			$this->msg = $e->msg;
 			$this->code = $e->code;
 			$this->status = $e->status;

@@ -1,6 +1,7 @@
 <?php
 namespace app\api\controller;
 use think\facade\Request;
+
 class Common{
 	
 	protected $user;
@@ -33,4 +34,14 @@ class Common{
 			'index/login'
 		];
 	}
+
+	protected function response($data = [],$msg = 'ok', $code = '200', $status = 1){
+		return [
+			'msg' => $msg,
+			'code' => $code,
+			'status' => ($status)?'success':'failure',
+			'data' => $data
+		];
+	}
+
 }

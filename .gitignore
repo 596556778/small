@@ -2,3 +2,6 @@
 /.Env
 /runtime/*
 /public/.htaccess
+.buildpath
+.project
+.settings

@@ -3,10 +3,10 @@ namespace app\common\exception;
 use think\Exception;
 
 class BaseException extends Exception{
-	protected  $code = 400;
-	protected  $msg = 'invalid parameters';
-	protected  $status = 0;
-	protected  $data = null;
+	public  $code = 400;
+	public  $msg = 'invalid parameters';
+	public  $status = 0;
+	public  $data = null;
 
 	public function __construct($params = []){
 
